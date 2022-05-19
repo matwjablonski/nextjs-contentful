@@ -51,6 +51,10 @@ const Home: NextPage = () => {
       <p>Dodaj kilka przykładowych artykułów z różnymi datami utworzenia, dodaj przynajmniej jeden, który ma datę przyszłą.</p>
       <p>Na widoku listy artykułów wyświetl tylko te artykuły, których data jest przeszła względem dziś lub teraźniejsza.</p>
       <p>Na widoku listy wyświetl odfiltrowane artykuły wykorzystując wcześniej utworzony komponent <em>PostPreview</em>.</p>
+      <h2 className="title">Zadanie nr 6</h2>
+      <h3 className="subtitle">Contentful + Next (context)</h3>
+      <p>Na widoku pojedynczego artykułu pobierz <em>slug</em> z contextu i na jego podstawie pobierz dane konkretnego artykułu. Przekaż je do widoku artykułu i wyświetl.</p>
+      <p>Za pomocą CSS Modules dodaj kilka własnych reguł CSS (możesz też wykorzystać klasy css z bulma.io)</p>
     </MainLayout>
   )
 }
