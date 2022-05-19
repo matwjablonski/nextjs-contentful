@@ -62,6 +62,11 @@ const Home: NextPage = () => {
       <p>Przekształć wszystkie <em>p</em> w taki sposób, aby domyślnie przyjmowały klasę <em>is-size-3</em></p>
       <p>Przekształć cytowania tak, aby cytowany tekst był szary</p>
       <p>W Contentful dodaj zdjęcie do artykułu do pola content i wyświetl je na odpowiedniej stronie wykorzystując <em>next/image</em></p>
+      <h2 className="title">Zadanie nr 8</h2>
+      <h3 className="subtitle">API routes</h3>
+      <p>Napisz endpoint <em>api/author</em>, który zwróci obiekt z danymi autora artykułów</p>
+      <p>Obiekt powinien zawierać przynajmniej imię i opis</p>
+      <p>Pobierz dane z tego endpointu na widoku artykułu i wyświetl je według swojego uznania.</p>
     </MainLayout>
   )
 }
