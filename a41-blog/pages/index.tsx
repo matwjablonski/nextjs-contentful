@@ -67,6 +67,11 @@ const Home: NextPage = () => {
       <p>Napisz endpoint <em>api/author</em>, który zwróci obiekt z danymi autora artykułów</p>
       <p>Obiekt powinien zawierać przynajmniej imię i opis</p>
       <p>Pobierz dane z tego endpointu na widoku artykułu i wyświetl je według swojego uznania.</p>
+      <h2 className="title">Zadanie nr 9</h2>
+      <h3 className="subtitle">Komentarze</h3>
+      <p>Stwórz nowy typ danych dla komentarzy.</p>
+      <p>Napisz endpoint <em>api/comments/add</em>, który będzie wysyłał do Contentful’a nowe komentarze</p>
+      <p>Przygotuj formularz do pisania komentarzy na widoku artykułu.</p>
     </MainLayout>
   )
 }
