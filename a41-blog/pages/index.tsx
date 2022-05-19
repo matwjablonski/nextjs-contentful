@@ -25,6 +25,18 @@ const Home: NextPage = () => {
       <ul>
         <li>w <em>Breadcrumbs</em> użyj <em>useRouter</em> do pobrania aktualnej ścieżki</li>
       </ul>
+      <h2 className="title">Zadanie nr 3</h2>
+      <h3 className="subtitle">Contentful</h3>
+      <p>Załóż konto na <em>contentful.com</em>. Przygotuj <em>Content Model</em> Article, który będzie zawierał</p>
+      <ul>
+        <li>tytuł (Text)</li>
+        <li>slug (Text - Slug)</li>
+        <li>autora (Text)</li>
+        <li>zdjęcie (Asset)</li>
+        <li>datę publikacji (Date)</li>
+        <li>skrót treści (Text - Long)</li>
+        <li>treść (Rich Text)</li>
+      </ul>
     </MainLayout>
   )
 }
