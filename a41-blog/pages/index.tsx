@@ -17,6 +17,14 @@ const Home: NextPage = () => {
         <li>komponent <em>PostPreview</em> powinien wyświetlić tytuł artykułu, datę powstania, skrót treści oraz autora</li>
       </ul>
       <p>W projekcie wykorzystywana jest <a href="https://bulma.io/documentation/" target="_blank">Bulma</a> jako CSS Framework. Możecie śmiało korzystać z jej klas, aby ostylować tworzone elementy.</p>
+      <h2 className="title">Zadanie nr 2</h2>
+      <h3 className="subtitle">Nawigacja</h3>
+      <p>Większość aplikacji potrzebuje nawigacji. Wykorzystując wiedzę na temat <em>next/link</em> oraz <em>next/router</em> przygotuj komponent nawigacji, który będzie tworzył menu naszej aplikacji. Umieść go w <em>layouts/main.tsx</em> - tak aby był dostępny dla całej aplikacji.</p>  
+      <p>Drugim zadaniem jest dokończenie komponentu <em>Breadcrumbs</em> w taki sposób, aby na drugiej pozycji wyświetlał aktualną stronę. Pamiętaj, że obie pozycje powinny być linkami.</p>
+      <h4>Wymagania</h4>
+      <ul>
+        <li>w <em>Breadcrumbs</em> użyj <em>useRouter</em> do pobrania aktualnej ścieżki</li>
+      </ul>
     </MainLayout>
   )
 }
