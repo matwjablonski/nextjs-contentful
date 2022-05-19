@@ -46,6 +46,11 @@ const Home: NextPage = () => {
       </ul>
       <p>NextJS ma wbudowane wsparcie dla plików .env.local, a zatem możemy dodać do takiego pliku nasze wygenerowane klucze. W aplikacji pojawił się plik contentful.ts, który zawiera informacje o połączeniu z naszym CMSem. Twoim zadaniem jest wyciągnąć klucze ze zmiennych środowiskowych i przekazać je do parametrów funkcji createClient. Na widoku listy artykułów pobierz wszystkie artykuły z Contentfula wykorzystując technikę SSR.</p>
       <strong>UWAGA! Przeinstaluj node_modules. Został dodany nowy pakiet.</strong>
+      <h2 className="title">Zadanie nr 5</h2>
+      <h3 className="subtitle">Contentful + Next</h3>
+      <p>Dodaj kilka przykładowych artykułów z różnymi datami utworzenia, dodaj przynajmniej jeden, który ma datę przyszłą.</p>
+      <p>Na widoku listy artykułów wyświetl tylko te artykuły, których data jest przeszła względem dziś lub teraźniejsza.</p>
+      <p>Na widoku listy wyświetl odfiltrowane artykuły wykorzystując wcześniej utworzony komponent <em>PostPreview</em>.</p>
     </MainLayout>
   )
 }
