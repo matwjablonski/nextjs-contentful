@@ -32,7 +32,7 @@ const PostPreview: FC<PostPreviewProps> = ({ author, content, title, date, image
                 {content}
                 <a href="#">#css</a> <a href="#">#responsive</a>
                 <div>
-                    <time datetime="2016-1-1">{date}</time>
+                    <time>{date}</time>
                 </div>
             </div>
         </div>
