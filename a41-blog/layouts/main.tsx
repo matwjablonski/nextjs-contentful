@@ -1,6 +1,7 @@
 import { FC, ReactNode } from 'react';
 import Head from 'next/head';
 import Header from '../components/Header'
+import Breadcrumbs from '../components/Breadcrumbs';
 
 const MainLayout: FC<{ children?: ReactNode }> = ({ children }) =>
     <div className="container">
@@ -10,6 +11,7 @@ const MainLayout: FC<{ children?: ReactNode }> = ({ children }) =>
         </Head>
         <Header/>
         <main className="section">
+            <Breadcrumbs />
             <div className="content">
                 {children}
             </div>
