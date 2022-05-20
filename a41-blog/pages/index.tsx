@@ -50,6 +50,17 @@ const Home: NextPage = () => {
       <p>Dodaj kilka przykładowych artykułów z różnymi datami utworzenia, dodaj przynajmniej jeden, który ma datę przyszłą.</p>
       <p>Na widoku listy artykułów wyświetl tylko te artykuły, których data jest przeszła względem dziś lub teraźniejsza.</p>
       <p>Na widoku listy wyświetl odfiltrowane artykuły wykorzystując wcześniej utworzony komponent <em>PostPreview</em>.</p>
+      <h2 className="title">Zadanie nr 6</h2>
+      <h3 className="subtitle">Contentful + Next (context)</h3>
+      <p>Na widoku pojedynczego artykułu pobierz <em>slug</em> z contextu i na jego podstawie pobierz dane konkretnego artykułu. Przekaż je do widoku artykułu i wyświetl.</p>
+      <p>Za pomocą CSS Modules dodaj kilka własnych reguł CSS (możesz też wykorzystać klasy css z bulma.io)</p>
+      <h2 className="title">Zadanie nr 7</h2>
+      <h3 className="subtitle">Rich text</h3>
+      <p>Dodaj odpowiednie typy do komponentu <em>PostPreview</em></p>
+      <p>W widoku pojedynczego artykułu wyświetl treść z pola typu RichText</p>
+      <p>Przekształć wszystkie <em>p</em> w taki sposób, aby domyślnie przyjmowały klasę <em>is-size-3</em></p>
+      <p>Przekształć cytowania tak, aby cytowany tekst był szary</p>
+      <p>W Contentful dodaj zdjęcie do artykułu do pola content i wyświetl je na odpowiedniej stronie wykorzystując <em>next/image</em></p>
     </MainLayout>
   )
 }
