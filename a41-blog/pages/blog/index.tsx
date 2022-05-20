@@ -1,8 +1,10 @@
 import { NextPage } from "next";
 import PostPreview from "../../components/PostPreview";
 import MainLayout from "../../layouts/main";
+import { fetchEntries } from "../../contentful";
 
-const BlogPage: NextPage = () => {
+const BlogPage: NextPage = ({ posts }) => {
+    console.log(posts);
     return <MainLayout>
         <div className="columns">
             <div className="column is-one-third">
@@ -16,6 +18,20 @@ const BlogPage: NextPage = () => {
             </div>
         </div>
     </MainLayout>
+}
+
+export const getServerSideProps = async () => {
+    const res = await fetchEntries({
+        content_type: 'product'
+    });
+
+    const posts = res?.map(p => p.fields);
+
+    return {
+        props: {
+            posts
+        }
+    }
 }
 
 export default BlogPage;
