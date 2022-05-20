@@ -2,8 +2,18 @@ import { NextPage } from "next";
 import PostPreview from "../../components/PostPreview";
 import MainLayout from "../../layouts/main";
 import { fetchEntries } from "../../contentful";
+import { useEffect } from "react";
 
 const BlogPage: NextPage = ({ posts }) => {
+
+    useEffect(() => {
+        fetch('/api/hello')
+            .then(res => res.json())
+            .then(res => {
+                console.log(res);
+            })
+    }, []);
+
     return <MainLayout>
         <div className="columns">
             {

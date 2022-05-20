@@ -13,6 +13,7 @@
     "@contentful/rich-text-types": "^15.12.1",
     "bulma": "^0.9.4",
     "contentful": "^9.1.28",
+    "contentful-management": "^10.6.0",
     "next": "12.1.6",
     "react": "18.1.0",
     "react-dom": "18.1.0",
