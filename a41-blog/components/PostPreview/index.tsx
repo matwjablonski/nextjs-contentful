@@ -1,4 +1,6 @@
 import { FC } from "react";
+import Image from 'next/image';
+import Link from 'next/link'
 
 interface PostPreviewProps {
     author: string;
@@ -6,13 +8,14 @@ interface PostPreviewProps {
     image: string;
     title: string;
     date: string;
+    slug: string;
 }
 
-const PostPreview: FC<PostPreviewProps> = ({ author, content, title, date, image }) => (
+const PostPreview: FC<PostPreviewProps> = ({ author, content, title, date, image, slug }) => (
     <div className="card">
         <div className="card-image">
             <figure className="image is-4by3">
-                <img src={image} alt="Placeholder image" />
+                <Image src={`https:${image}`} alt="Abc" width={"100%"} height={"100%"} layout="responsive"/>
             </figure>
         </div>
         <div className="card-content">
@@ -23,14 +26,19 @@ const PostPreview: FC<PostPreviewProps> = ({ author, content, title, date, image
                     </figure>
                 </div>
                 <div className="media-content">
-                    <p className="title is-4">{title}</p>
+                    <p className="title is-4">
+                        <Link href={`/blog/${slug}`}>
+                            <a>
+                                {title}
+                            </a>
+                        </Link>
+                    </p>
                     <p className="subtitle is-6">{author}</p>
                 </div>
             </div>
 
             <div className="content">
                 {content}
-                <a href="#">#css</a> <a href="#">#responsive</a>
                 <div>
                     <time>{date}</time>
                 </div>

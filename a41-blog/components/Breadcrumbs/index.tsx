@@ -10,7 +10,7 @@ const Breadcrumbs = () => {
         <ul>
             <li>Home</li>
             <li>
-                <Link href={getPath()}>
+                <Link href={pathname}>
                     <a>{getPath().toUpperCase()}</a>
                 </Link>
             </li>
